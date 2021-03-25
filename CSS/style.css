@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Play', sans-serif;
+}
+
+body{
+    background-color:  rgb(255, 205, 196);
+}
+.wrapper{
+    display: grid;
+}
+nav{
+    display: grid;
+    background-color: tomato;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+nav ul li{
+    list-style: none;
+   
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+nav ul li a:hover{
+    color: tomato;
+    background-color: black;
+}
+nav li:nth-child(4){
+    grid-column: 6;
+}
+.top{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem;
+    padding: 20px;
+    height: 550px;
+}
+
+#top1{
+    background-color: light;
+    top: 0;
+    text-align: center;
+    padding:20px;
+    max-height: 550px;
+    overflow: scroll;
+    box-shadow: 0px 0px 1px black;
+    background-color: rgb(255, 201, 201);
+}
+#top2{
+    background:url('../IMAGES/bac.jpeg');
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 1px black;
+    text-align: center;
+}
+#top2 > h1{
+    padding-top: 30px;
+    text-shadow: 2px 2px white;
+}
+
+@media screen and (max-width:600px){
+    .top{
+        height: 350px;
+    } 
+    #top1{
+        height: 350px;
+    }
+}
+
+.pics{
+    margin-top: 20px;
+    padding-top: 10px;
+    display: grid;
+    background-color: rgb(101, 94, 145);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+}
+.pic img
+{
+    display: block;
+    margin:auto;
+    padding: 10px ;
+    width: 200px;
+    height: 100px;
+}
+
+.photos{
+    margin-top: 20px;
+    padding-top: 10px;
+    display: grid;
+    background-color:  rgb(101, 94, 145);
+    grid-template-columns: repeat(4, 1fr );
+}
+.photo img
+{
+    display: block;
+    margin:auto;
+    padding-top: 10px ;
+    width: 280px;
+    height: 250px;
+}
+
+.heading h1{
+    text-align: center;
+    color: white;
+    text-shadow:2px 0px 2px black;
+    background-color:  rgb(101, 94, 145);
+    margin-top: 41px;
+
+}
